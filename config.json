@@ -1,0 +1,5 @@
+{
+    "browser": "Chrome",
+    "web": "https://www.mercadolibre.com.ar",
+    "implicit_wait": 10
+}
