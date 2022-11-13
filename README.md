@@ -5,7 +5,6 @@ UI Testing - Selenium and Python
 Testing web: Mercadolibre.com
 
 Desing Pattern: Page Object
-    objects are created representing components or web pages
 
 What is needed:
 
@@ -14,9 +13,10 @@ What is needed:
 - atomicwrites, "pipenv install atomicwrites"
 - Selenium, "pipenv install selenium"
 - Correct version of webdrivers for your browsers
-    Chromedriver https://chromedriver.chromium.org/downloads
-    geckodriver https://github.com/mozilla/geckodriver/releases
+        Chromedriver https://chromedriver.chromium.org/downloads
+        geckodriver https://github.com/mozilla/geckodriver/releases
 - Chromedriver and geckodriver must be on PATH
+- pipenv install pytest-html
 
 check everything is set up with
 - "Python -V" or "python --version" to show version installed
@@ -32,6 +32,9 @@ Install all dependencies for a project:
 
 run tests:
     $ pipenv run python -m pytest 
+
+run tests with report:
+    $ pipenv run python -m pytest --html=QA_Challenge_Report.html
 
 run parallel tests:
     $ pipenv run python -m pytest  -n 3
