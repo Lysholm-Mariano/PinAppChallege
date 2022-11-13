@@ -24,10 +24,9 @@ check everything is set up with
 - "chromedriver --version" "geckodriver --version" or to show version installed
 
 
-
 Modify browser in config.json with "Chrome", "Firefox", "headless Chrome"
 
-Install all dependencies for a project:
+Install all dependencies for the project:
     $ pipenv install 
 
 run tests:

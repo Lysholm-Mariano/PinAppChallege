@@ -6,7 +6,6 @@ with open('config.json') as config_file:
 
 web = config['web']
 
-
 class ResultPage:
 
     URL = web 
