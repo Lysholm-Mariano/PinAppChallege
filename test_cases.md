@@ -4,16 +4,12 @@ TEST CASES
     Test case: Check response on entering no valid Password
     Expected result: An error message of wrong data
     test steps:
-        Given Mercadolibre home page is displayed
+        Given an user already created for mercadolibre
         When user click "Ingresá"
-        Then the login screen is loaded
-        
-        Given input mail box is shown
-        When user types valid mail and "Continuar" button
-        Then the password screen is loaded
-
-        Given input password box is shown
-        When user types no valid password and "Iniciar sesión" button
+        and the login screen is loaded
+        and user types valid mail and "Continuar" button
+        and user types no valid password 
+        and user clicks "Iniciar sesión" button
         Then a message showing an errors appears
 
 
@@ -30,5 +26,5 @@ TEST CASES
     Expected result: A page with full description is loaded with a "Comprar ahora" Button
     test steps:
         Given a list of products
-        When user click any of them
+        When user clicks any of them
         Then the product's page is displayed, with a full description and a button to buy the item
